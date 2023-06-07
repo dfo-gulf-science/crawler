@@ -23,3 +23,7 @@ python -m venv venv
 3. Clone the repo: `git clone https://github.com/dfo-gulf-science/crawler.git`
 4. Activate the virtual environment: `..\venv\Scripts\activate`
 5. Install requirements: `pip install -r requirements.txt`
+
+### Run the script!
+
+`python crawl.py --source_dir="M:\foo_dir\tif_src" --target_dir="N:\bar_dir\jpg_dst"`
