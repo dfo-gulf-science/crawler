@@ -1,7 +1,7 @@
-# Crawler
+# Tiff Crawler
 
-- This is a python script used to crawl through a target directory, find all TIFF files, 
-convert them to JPEG and copy them to a new target directory.
+This is a python script used to crawl through a source directory, find all TIF files, 
+convert them to JPEG and copy them to some target directory.
 
 
 ### Getting started
