@@ -27,7 +27,7 @@ for root, dirs, files in os.walk(source_dir):
            (-)
            (?P<sample_id>[\d]*)  # the sample id
            (-)
-           (?P<fish_number>[\d]{3})  # the zero-padded fish number
+           (?P<fish_number>[\d]{3}[ab]{0,1})  # the zero-padded fish number
            (\.)
            (?P<file_type>tif$|tiff$) #  the file extention
            """
@@ -38,6 +38,9 @@ for root, dirs, files in os.walk(source_dir):
             new_file = new_file.lower().replace(search.groupdict().get("file_type"), "jpg")
 
             infile = os.path.join(root, file)
+            if "enhanced" in infile.lower():
+                new_file = f'{new_file.split(".")[0]}_enhanced.{new_file.split(".")[1]}'
+
             outfile = os.path.join(target_dir, new_file)
 
             # inspired by https://stackoverflow.com/questions/28870504/converting-tiff-to-jpeg-in-python
