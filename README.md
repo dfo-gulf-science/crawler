@@ -31,5 +31,5 @@ python -m venv venv
 
 **Linux**
 src="/foo_dir/src"
-dst="/foo_dir/dst"
+dst="/bar_dir/dst"
 `python crawl.py --source_dir=$src --target_dir=$dst`
