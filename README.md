@@ -21,15 +21,21 @@ cd crawler_root
 python -m venv venv
 ``` 
 3. Clone the repo: `git clone https://github.com/dfo-gulf-science/crawler.git`
-4. Activate the virtual environment: **Windows**: `..\venv\Scripts\activate` **Linux**: `source ..\venv\bin\activate`
+4. Activate the virtual environment: 
+   **Windows** --> `..\venv\Scripts\activate` 
+   **Linux** --> `source ..\venv\bin\activate`
 5. Install requirements: `pip install -r requirements.txt`
 
 ### Run the script!
 
-**Windows**
+**Windows**:
+
 `python crawl.py --source_dir="M:\foo_dir\tif_src" --target_dir="N:\bar_dir\jpg_dst"`
 
-**Linux**
+**Linux**:
+
+```
 src="/foo_dir/src"
 dst="/bar_dir/dst"
-`python crawl.py --source_dir=$src --target_dir=$dst`
+python crawl.py --source_dir=$src --target_dir=$dst
+```
