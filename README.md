@@ -21,9 +21,7 @@ cd crawler_root
 python -m venv venv
 ``` 
 3. Clone the repo: `git clone https://github.com/dfo-gulf-science/crawler.git`
-4. Activate the virtual environment: <br>
-   **Windows** --> `..\venv\Scripts\activate` <br> 
-   **Linux** --> `source ..\venv\bin\activate`<br>
+4. Activate the virtual environment: `..\venv\Scripts\activate` (**Windows**) OR `source ..\venv\bin\activate` (**Linux**)
 5. Install requirements: `pip install -r requirements.txt`
 
 ### Run the script!
